@@ -1,8 +1,9 @@
+var path = require('path');
 module.exports = {
-  entry: './index.js', // assumes your entry point is the index.js in the root of your project folder
+  entry: './index.js',
   mode: 'development',
   output: {
-    path: __dirname, // assumes your bundle.js will also be in the root of your project folder
+    path: __dirname,
     filename: 'bundle.js'
   },
   devtool: 'source-maps',
@@ -16,5 +17,10 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, '.'),
+    compress: true,
+    port: 8080
   }
-}
+};
