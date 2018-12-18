@@ -1,0 +1,33 @@
+{
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "This is my portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "start-dev": "webpack -w & nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GooMiHo/portfolioWebsite.git"
+  },
+  "author": "Bethany Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GooMiHo/portfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/GooMiHo/portfolioWebsite#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
+  }
+}
